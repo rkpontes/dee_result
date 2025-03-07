@@ -16,6 +16,9 @@ abstract class Either<L, R> {
       (_) => throw UnimplementedError("getRight"), (rightValue) => rightValue);
 }
 
+/// A class representing the left side of an [Either] class.
+/// This class is typically used to represent the failure of an operation.
+/// The value of the failure is stored in the [value] field.
 class Left<L, R> extends Either<L, R> {
   final L value;
   const Left(this.value);
@@ -25,6 +28,9 @@ class Left<L, R> extends Either<L, R> {
       ifLeft(value);
 }
 
+/// A class representing the right side of an [Either] class.
+/// This class is typically used to represent the success of an operation.
+/// The value of the success is stored in the [value] field.
 class Right<L, R> extends Either<L, R> {
   final R value;
   const Right(this.value);
