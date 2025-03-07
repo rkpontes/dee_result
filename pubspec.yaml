@@ -1,6 +1,6 @@
 name: dee_result
-description: "A default result for Dart and Flutter"
-version: 0.0.1
+description: "A Dart and Flutter library providing structured error handling with Either and Result types, ensuring clear and type-safe functional programming paradigms."
+version: 0.0.1+1
 homepage: https://github.com/rkpontes/dee_result
 
 environment:
